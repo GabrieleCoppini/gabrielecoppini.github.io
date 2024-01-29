@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .bg-image{
+    height: 100vh;
+    background-image: url("image/sfondo.jpg");
+    background-position: center;
+    background-size: contain;
+  }
+
+
+
+  /*navbar*/
+
+  .container__nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid white;
+    background-color: #0c0d24;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+    width: 900px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .menu {
+    display: flex;
+  }
+
+  .nav__item {
+    margin-left: 20px;
+    padding: 5px;
+    font-weight: bold;
+  }
+  .nav__link {
+    text-decoration: none;
+    color: white;
+  }
+  .nav__link:hover{
+    color: grey;
+  }
+    
+
+
+
+  /* ! header */
+
+  .container__header {
+   color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .header {
+    padding: 20px;
+    width: 900px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* ! header text */
+  .hello {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-shadow: -5px 5px 10px black;
+  }
+
+
+  .name {
+    font-size: 20px;
+  }
+  
+  .minibio {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  /* ! social icon */
+  .social__list {
+    list-style-type: none;
+  }
+  
+  .social__icon {
+    padding-top: 30px;
+  }
+  
+  .social__icon a:link,
+  .social__icon a:visited {
+    color: white;
+  }
+  
+  .social__icon a:hover {
+    color: grey;
+  }
+
+  .fab {
+    font-size: 35px;
+  }
+
+   /* ! main */
+   .main__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* ! section title */
+  .biography__title,
+  .latest__work-title {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+  }
+  
+  .biography__title h1,
+  .latest__work-title h1{
+    font-family: Roboto Mono;
+    font-size: 35px;
+    margin: 0 auto 10px;
+    width: 35vw;
+    border-bottom: 5px solid #FFC436;
+  }
+
+  /* ! section body */
+  .biography,
+  .latest__work,
+  .contact__form__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin: 100px auto;
+  }
+
+  /* ! biography */
+  .biography__title p {
+    width: 50%;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+  }
+/* ! skills */
+.biography__skills {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+ /* ! myimg */
+ .biography__container__img {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex: 2;
+  }
+  
+  .biography__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 5%;
+    box-shadow: -2px 2px 15px black;
+  }
+
+
+ /* ! hard skills */
+ .skills__hard {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    flex: 3;
+  }
+  
+  .skills__hard h4 {
+    position: relative;
+    bottom: 41px;
+  }
+  
+  .progress {
+    background: #333;
+    border-radius: 13px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;
+  }
+  
+  .level1:after,
+  .level2:after {
+    content: '80%';
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    background: #FFC436;
+    width: 80%;
+    height: 100%;
+    border-radius: 9px;
+  }
+  
+  .level3:after {
+    content: '10%';
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    background: #FFC436;
+    width: 10%;
+    height: 100%;
+    border-radius: 9px;
+  }
+    
+  /* ! soft skills */
+  .skills__soft {
+    flex: 3;
+    width: 300px;
+  }
+  
+  .skills__soft__list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skills__item {
+    font-size: 25px;
+    padding-top: 10px;
+    display: flex;
+  }
+  
+  .skills__icon {
+    padding-right: 15px;
+  }
+  
+  .skills__item p {
+    display: inline;
+  }
+  
+
+
+  
+  /*work*/
+
+  .work-section{
+    width: 800px;
+    margin: 35px 40px;
+    background-color: white;
+  
+    
+  }
+
+.work-section .grid-work {
+    display: grid;
+    grid-template-rows:1fr;
+    column-gap: 10px;
+    row-gap: 50px;
+    
+    
+    
+  }
+  
+ .work-section .grid-work img{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+    border: 5px solid white;
+    border-radius: 5%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  
+  }
+  
+  
+  
+.work-section .grid-work .box{
+  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   
+   
+  }
+.work-section .grid-work .box p{
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 20px 20px;
+  
+  }
+
+/*form*/
+
+  .contact-me{
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    background:#0c0d24;margin:0;
+  }
+  .contact-me .form{
+    width:340px;
+    height:440px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:100px auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+  }
+  .contact-me .form h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#78788c;
+    border-bottom:3px solid #78788c;
+  }
+  
+  .contact-me .form input{
+  width:100%;
+  padding:10px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family:'Montserrat',sans-serif;
+  transition:all .3s;
+  border-bottom:2px solid #bebed2}
+  
+  .contact-me .form input:focus{
+    border-bottom:2px solid #78788c
+  }
+  .contact-me .form p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a;
+  }
+  button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+  }
+  button:hover{
+    background:#78788c;
+    color:#fff;
+  }
+  button:active{
+    color: #848c93;
+  }
+  
+
+
+
+
+   /* ! tablet */
+   @media screen and (max-width:1024px) {
+    .header {
+      padding-top: 80px;
+      flex-flow: column;
+      align-items: flex-start;
+    }
+
+  
+    .social__list {
+      display: flex;
+      padding-bottom: 30px;
+    }
+  
+    .social__icon:not(#first) {
+      padding-left: 50px;
+    }
+  
+    .biography__intro p {
+      width: 85%;
+    }
+  
+    .biography,
+    .biography__skills {
+      flex-direction: column;
+    }
+  
+    .skills__hard {
+      order: 2;
+      margin-bottom: 20px;
+    }
+  
+    .skills__hard h4 {
+      position: static;
+    }
+  
+    .biography__container__img {
+      order: 1;
+      margin: 20px 0 20px;
+    }
+  
+    .skills__soft {
+      order: 3;
+    }
+    .work-section .grid-work{
+      grid-template-rows:1fr ;
+      
+  }
+
+  }
+   /* ! smartphone */
+   @media screen and (max-width:520px) {
+    html, body { 
+      height: 90%;
+    }
+  
+    .container__header{
+        height: 50%;
+    }
+    .navbar {
+      padding-right: 30px;
+    }
+
+    .hello {
+      padding-top: 50px;
+    }
+  
+    .biography__title p {
+      width: 80%;
+    }
+   
+
+    .skills__hard{
+        padding-top: 30px;
+    }
+    .skills__soft{
+        padding-top: 30px;
+    }
+  
+    .work-section .grid-work img{
+      width: 150px;
+    }
+  }
+   
