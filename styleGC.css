@@ -22,6 +22,7 @@ body {
 
 
   /*navbar*/
+ 
 
   .container__nav{
     width: 100%;
@@ -31,6 +32,20 @@ body {
     top: 0;
     border-bottom: 1px solid white;
     background-color: #0c0d24;
+  }
+
+  .logo-container{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+ 
+
+  .logo-container img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
   }
 
   .navbar {
